@@ -1,0 +1,959 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "Appreciation",
+      "features": []
+    },
+    {
+      "name": "Bad Mood",
+      "features": []
+    },
+    {
+      "name": "Bot Definition",
+      "features": []
+    },
+    {
+      "name": "Bot name",
+      "features": []
+    },
+    {
+      "name": "BotHelp",
+      "features": []
+    },
+    {
+      "name": "Data transfer",
+      "features": [
+        {
+          "modelName": "Application Owners",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "File Status",
+      "features": []
+    },
+    {
+      "name": "GDW Queue",
+      "features": [
+        {
+          "modelName": "File System Information",
+          "isRequired": false
+        },
+        {
+          "modelName": "Support Team",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Good Mood",
+      "features": []
+    },
+    {
+      "name": "Market Health Status",
+      "features": []
+    },
+    {
+      "name": "McD Abbreviations",
+      "features": []
+    },
+    {
+      "name": "Misc",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "Nothing",
+      "features": []
+    },
+    {
+      "name": "Outbound Directory",
+      "features": [
+        {
+          "modelName": "File System Information",
+          "isRequired": false
+        },
+        {
+          "modelName": "Support Team",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Pending files",
+      "features": []
+    },
+    {
+      "name": "Receive files",
+      "features": [
+        {
+          "modelName": "File System Information",
+          "isRequired": false
+        },
+        {
+          "modelName": "Vendors",
+          "isRequired": false
+        },
+        {
+          "modelName": "Support Team",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "Salutation",
+      "features": [
+        {
+          "featureName": "Salutation phrases",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "name": "Application Owners",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "File System Information",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "Market Managers",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "Support Team",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "Vendors",
+      "children": [],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "abbreviate",
+      "intent": "McD Abbreviations",
+      "entities": []
+    },
+    {
+      "text": "abbreviation",
+      "intent": "McD Abbreviations",
+      "entities": []
+    },
+    {
+      "text": "broken",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "can you display the market health report?",
+      "intent": "Market Health Status",
+      "entities": []
+    },
+    {
+      "text": "damaged",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "data transfer",
+      "intent": "Data transfer",
+      "entities": [
+        {
+          "entity": "Application Owners",
+          "startPos": 0,
+          "endPos": 12,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "dats all for now",
+      "intent": "Nothing",
+      "entities": []
+    },
+    {
+      "text": "dats amazing",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "dats awesome",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "dats gud",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "file - outbount",
+      "intent": "Outbound Directory",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 14,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "file : outbound",
+      "intent": "Outbound Directory",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 14,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "file + outbound",
+      "intent": "Outbound Directory",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 14,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "file count in outbound",
+      "intent": "Outbound Directory",
+      "entities": []
+    },
+    {
+      "text": "file count in outbound directory",
+      "intent": "Outbound Directory",
+      "entities": []
+    },
+    {
+      "text": "file status",
+      "intent": "File Status",
+      "entities": []
+    },
+    {
+      "text": "file status today",
+      "intent": "File Status",
+      "entities": []
+    },
+    {
+      "text": "files count in outbound",
+      "intent": "Outbound Directory",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 4,
+          "children": []
+        },
+        {
+          "entity": "File System Information",
+          "startPos": 15,
+          "endPos": 22,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "files count in outbound directory",
+      "intent": "Outbound Directory",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "files in outbound",
+      "intent": "Outbound Directory",
+      "entities": []
+    },
+    {
+      "text": "files in outbound directory",
+      "intent": "Outbound Directory",
+      "entities": []
+    },
+    {
+      "text": "files transfer",
+      "intent": "Data transfer",
+      "entities": [
+        {
+          "entity": "Application Owners",
+          "startPos": 0,
+          "endPos": 13,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "full form",
+      "intent": "McD Abbreviations",
+      "entities": []
+    },
+    {
+      "text": "full form of",
+      "intent": "McD Abbreviations",
+      "entities": []
+    },
+    {
+      "text": "full-form",
+      "intent": "McD Abbreviations",
+      "entities": []
+    },
+    {
+      "text": "fullform of",
+      "intent": "McD Abbreviations",
+      "entities": []
+    },
+    {
+      "text": "gdw queue",
+      "intent": "GDW Queue",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 8,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "gdw queue status",
+      "intent": "GDW Queue",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 15,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "good afternoon",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "good noon",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "got it",
+      "intent": "Misc",
+      "entities": []
+    },
+    {
+      "text": "gotch",
+      "intent": "Misc",
+      "entities": []
+    },
+    {
+      "text": "gotta",
+      "intent": "Misc",
+      "entities": []
+    },
+    {
+      "text": "gwd",
+      "intent": "GDW Queue",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 2,
+          "children": []
+        },
+        {
+          "entity": "Support Team",
+          "startPos": 0,
+          "endPos": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hai hai",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "health report",
+      "intent": "Market Health Status",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Salutation",
+      "entities": [
+        {
+          "entity": "Vendors",
+          "startPos": 0,
+          "endPos": 4,
+          "children": []
+        },
+        {
+          "entity": "Support Team",
+          "startPos": 0,
+          "endPos": 4,
+          "children": []
+        },
+        {
+          "entity": "Market Managers",
+          "startPos": 0,
+          "endPos": 4,
+          "children": []
+        },
+        {
+          "entity": "Application Owners",
+          "startPos": 0,
+          "endPos": 4,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "help",
+      "intent": "BotHelp",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "hey hi",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "hey there",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "hi hi",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "hi there",
+      "intent": "Salutation",
+      "entities": [
+        {
+          "entity": "Vendors",
+          "startPos": 0,
+          "endPos": 1,
+          "children": []
+        },
+        {
+          "entity": "Support Team",
+          "startPos": 0,
+          "endPos": 1,
+          "children": []
+        },
+        {
+          "entity": "Market Managers",
+          "startPos": 0,
+          "endPos": 1,
+          "children": []
+        },
+        {
+          "entity": "Application Owners",
+          "startPos": 0,
+          "endPos": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hmm",
+      "intent": "Misc",
+      "entities": []
+    },
+    {
+      "text": "hopeless day",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "how many files are pending delivery on my queue?",
+      "intent": "Pending files",
+      "entities": [
+        {
+          "entity": "Market Managers",
+          "startPos": 9,
+          "endPos": 47,
+          "children": []
+        },
+        {
+          "entity": "Support Team",
+          "startPos": 9,
+          "endPos": 47,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "how many files are there in my outbound directory",
+      "intent": "Outbound Directory",
+      "entities": []
+    },
+    {
+      "text": "im doin gud",
+      "intent": "Good Mood",
+      "entities": []
+    },
+    {
+      "text": "i'm doing awesome",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "i'm doing better",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "i'm doing fine",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "im doing good",
+      "intent": "Good Mood",
+      "entities": []
+    },
+    {
+      "text": "i'm doing good",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "i'm doing great",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "im doing gud",
+      "intent": "Good Mood",
+      "entities": []
+    },
+    {
+      "text": "i'm doing ok",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "im fine",
+      "intent": "Good Mood",
+      "entities": []
+    },
+    {
+      "text": "i'm fine",
+      "intent": "Good Mood",
+      "entities": []
+    },
+    {
+      "text": "i'm not doing fine",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "i'm not doing ok",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "i'm not well",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "its a bad day",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "market health report",
+      "intent": "Market Health Status",
+      "entities": []
+    },
+    {
+      "text": "market report",
+      "intent": "Market Health Status",
+      "entities": []
+    },
+    {
+      "text": "negative",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "nope, its bad",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "not ok",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "nothing",
+      "intent": "Nothing",
+      "entities": []
+    },
+    {
+      "text": "ok",
+      "intent": "Misc",
+      "entities": []
+    },
+    {
+      "text": "outbound directory",
+      "intent": "Outbound Directory",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 7,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "pending files in my queue",
+      "intent": "Pending files",
+      "entities": [
+        {
+          "entity": "Support Team",
+          "startPos": 0,
+          "endPos": 24,
+          "children": []
+        },
+        {
+          "entity": "Vendors",
+          "startPos": 0,
+          "endPos": 24,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "queue status of gdw",
+      "intent": "GDW Queue",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 18,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "terrible",
+      "intent": "Bad Mood",
+      "entities": []
+    },
+    {
+      "text": "thats all",
+      "intent": "Nothing",
+      "entities": []
+    },
+    {
+      "text": "that's all",
+      "intent": "Nothing",
+      "entities": []
+    },
+    {
+      "text": "thats all for now",
+      "intent": "Nothing",
+      "entities": []
+    },
+    {
+      "text": "that's all for now",
+      "intent": "Nothing",
+      "entities": []
+    },
+    {
+      "text": "thats alright",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "thats awesome",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "thats cool",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "thats fantastic",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "thats good",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "thats great",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "thats it",
+      "intent": "Nothing",
+      "entities": []
+    },
+    {
+      "text": "that's it",
+      "intent": "Nothing",
+      "entities": []
+    },
+    {
+      "text": "thats nice",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "thats perfect",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "thats very good",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "u r awesome",
+      "intent": "Appreciation",
+      "entities": []
+    },
+    {
+      "text": "u r name",
+      "intent": "Bot name",
+      "entities": []
+    },
+    {
+      "text": "um",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "umm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ur name",
+      "intent": "Bot name",
+      "entities": []
+    },
+    {
+      "text": "vendor + files + today",
+      "intent": "Receive files",
+      "entities": []
+    },
+    {
+      "text": "wat can u do?",
+      "intent": "BotHelp",
+      "entities": []
+    },
+    {
+      "text": "wat is the file status for today?",
+      "intent": "File Status",
+      "entities": []
+    },
+    {
+      "text": "wat is u r name",
+      "intent": "Bot name",
+      "entities": []
+    },
+    {
+      "text": "wat r u",
+      "intent": "Bot Definition",
+      "entities": []
+    },
+    {
+      "text": "wats ur name",
+      "intent": "Bot name",
+      "entities": []
+    },
+    {
+      "text": "wats'up",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "what are you",
+      "intent": "Bot Definition",
+      "entities": []
+    },
+    {
+      "text": "what can u assist me with?",
+      "intent": "BotHelp",
+      "entities": []
+    },
+    {
+      "text": "what can u do?",
+      "intent": "BotHelp",
+      "entities": []
+    },
+    {
+      "text": "what can you assist me with?",
+      "intent": "BotHelp",
+      "entities": []
+    },
+    {
+      "text": "what is the status of gdw queue",
+      "intent": "GDW Queue",
+      "entities": [
+        {
+          "entity": "File System Information",
+          "startPos": 0,
+          "endPos": 30,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "what is the status of my files today?",
+      "intent": "File Status",
+      "entities": []
+    },
+    {
+      "text": "what is your name?",
+      "intent": "Bot name",
+      "entities": []
+    },
+    {
+      "text": "what r u",
+      "intent": "Bot Definition",
+      "entities": []
+    },
+    {
+      "text": "whats up",
+      "intent": "Salutation",
+      "entities": []
+    },
+    {
+      "text": "what's your name?",
+      "intent": "Bot name",
+      "entities": []
+    },
+    {
+      "text": "who are you?",
+      "intent": "Bot Definition",
+      "entities": []
+    },
+    {
+      "text": "who the hell are u",
+      "intent": "Bot Definition",
+      "entities": []
+    },
+    {
+      "text": "who the hell are you",
+      "intent": "Bot Definition",
+      "entities": []
+    },
+    {
+      "text": "who the hell r u",
+      "intent": "Bot Definition",
+      "entities": []
+    },
+    {
+      "text": "your name",
+      "intent": "Bot name",
+      "entities": []
+    },
+    {
+      "text": "your name please?",
+      "intent": "Bot name",
+      "entities": []
+    },
+    {
+      "text": "yup im doing better",
+      "intent": "Good Mood",
+      "entities": []
+    },
+    {
+      "text": "yup im doing ok",
+      "intent": "Good Mood",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "DMaaS-01",
+  "desc": "Files information",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [
+    {
+      "name": "Salutation phrases",
+      "mode": true,
+      "words": "hi,hello,hey,ca,howdy,ak,oh , hi,what's happening,- hey there,az,letter,greetings,oh , hey,oh , hello,good day,well , hello,good morning,- hello there,welcome,- hi there,yes , hello,- hello , dear,- oh , hello,well , hello there,hello , there,- hello,\" hello,hi hi",
+      "activated": true,
+      "enabledForAllModels": false
+    }
+  ],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}
